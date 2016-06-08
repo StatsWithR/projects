@@ -18,6 +18,7 @@ Pedro Sernadela - Universidade de Aveiro
 Number of Attributes: 61 (58 predictive attributes, 2 non-predictive, 1 goal field) 
 
 Attribute Information: 
+
 0. url: URL of the article (non-predictive) 
 1. timedelta: Days between the article publication and the dataset acquisition (non-predictive) 
 2. n_tokens_title: Number of words in the title 
