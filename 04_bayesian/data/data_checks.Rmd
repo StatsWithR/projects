@@ -1,0 +1,122 @@
+---
+title: "Online News Popularity - Data Checks"
+author: "Mine Cetinkaya-Rundel"
+date: "June 7, 2016"
+output: html_document
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+
+## Read data
+
+```{r cache=TRUE}
+d <- read.csv("OnlineNewsPopularity/OnlineNewsPopularity.csv")
+dim(d)
+```
+
+```{r}
+names(d)
+```
+
+## Select variables to be included in the final dataset
+
+```{r}
+d <- select(d, 
+            url, n_tokens_title, n_tokens_content, n_unique_tokens, n_non_stop_words, 
+            n_non_stop_unique_tokens, num_hrefs, num_self_hrefs, num_imgs,num_videos, 
+            average_token_length, num_keywords, data_channel_is_lifestyle, 
+            data_channel_is_entertainment, data_channel_is_bus, data_channel_is_socmed, 
+            data_channel_is_tech, data_channel_is_world, kw_min_min, kw_max_min, kw_avg_min, 
+            kw_min_max, kw_max_max, kw_avg_max, kw_min_avg, kw_max_avg, kw_avg_avg, 
+            self_reference_min_shares, self_reference_max_shares, self_reference_avg_sharess, 
+            weekday_is_monday, weekday_is_tuesday, weekday_is_wednesday, weekday_is_thursday, 
+            weekday_is_friday, weekday_is_saturday, weekday_is_sunday, is_weekend, 
+            global_rate_positive_words, global_rate_negative_words, shares)
+dim(d)
+```
+
+Names of variables in the final dataset:
+```{r}
+names(d)
+```
+
+```{r}
+str(d)
+```
+
+
+## Fix data types
+
+```{r}
+d <- mutate(d, url = as.character(url))
+class(d$url)
+head(d$url)
+```
+
+Check for one of the 0/1 variables:
+
+```{r}
+table(d$weekday_is_monday)
+class(d$weekday_is_monday)
+```
+
+Convert 0/1 variables to factors with no/yes levels:
+
+```{r}
+convert_no_yes <- function(x) {
+  x <- ifelse(x == 0, "no", "yes")
+  x <- as.factor(x)
+  return(x)
+}
+
+d <- d %>%
+  mutate(data_channel_is_lifestyle = convert_no_yes(data_channel_is_lifestyle)) %>%
+  mutate(data_channel_is_entertainment = convert_no_yes(data_channel_is_entertainment)) %>%
+  mutate(data_channel_is_bus = convert_no_yes(data_channel_is_bus)) %>%
+  mutate(data_channel_is_socmed = convert_no_yes(data_channel_is_socmed)) %>%
+  mutate(data_channel_is_tech = convert_no_yes(data_channel_is_tech)) %>%
+  mutate(data_channel_is_world = convert_no_yes(data_channel_is_world)) %>%
+  mutate(weekday_is_monday = convert_no_yes(weekday_is_monday)) %>%
+  mutate(weekday_is_tuesday = convert_no_yes(weekday_is_tuesday)) %>%
+  mutate(weekday_is_wednesday = convert_no_yes(weekday_is_wednesday)) %>%
+  mutate(weekday_is_thursday = convert_no_yes(weekday_is_thursday)) %>%
+  mutate(weekday_is_friday = convert_no_yes(weekday_is_friday)) %>%
+  mutate(weekday_is_saturday = convert_no_yes(weekday_is_saturday)) %>%
+  mutate(weekday_is_sunday = convert_no_yes(weekday_is_sunday)) %>%
+  mutate(is_weekend = convert_no_yes(is_weekend))
+
+str(d)
+```
+
+Check for one of the variables:
+
+```{r}
+table(d$weekday_is_monday)
+class(d$weekday_is_monday)
+```
+
+
+## Response distribution
+
+```{r}
+ggplot(data = d, aes(x = shares)) +
+  geom_histogram(binwidth = 10000)
+```
+
+```{r}
+d <- mutate(d, log_shares = log(shares))
+ggplot(data = d, aes(x = log_shares)) +
+  geom_histogram(binwidth = 0.5)
+```
+
+## Save data
+
+```{r}
+news_pop <- tbl_df(d)
+save(news_pop, file = "news_pop.Rdata")
+```
+
