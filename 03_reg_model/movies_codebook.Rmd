@@ -44,7 +44,7 @@ as some of these variables may be dependent on each other.
 1. `critics_rating`: Categorical variable for critics rating on Rotten Tomatoes (Certified Fresh, Fresh, Rotten)
 1. `critics_score`: Critics score on Rotten Tomatoes
 1. `audience_rating`: Categorical variable for audience rating on Rotten Tomatoes (Spilled, Upright)
-1. `audience_score`: Audience score on Rotten Tomatoes (response variable)
+1. `audience_score`: Audience score on Rotten Tomatoes
 1. `best_pic_nom`: Whether or not the movie was nominated for a best picture Oscar (no, yes)
 1. `best_pic_win`: Whether or not the movie won a best picture Oscar (no, yes)
 1. `best_actor_win`: Whether or not one of the main actors in the movie ever won an Oscar (no, yes) -- note that this is not necessarily whether the actor won an Oscar for their role in the given movie
