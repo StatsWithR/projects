@@ -4,9 +4,9 @@
 ###### Background ######
 From <a href="http://www.cdc.gov/brfss/annual_data/2013/pdf/Overview_2013.pdf">BRFSS Overview</a>
 
-The Behavioral Risk Factor Surveillance System (BRFSS) is a collaborative project between all of the states in the United States (US) and participating US territories and the Centers for Disease Control and Prevention (CDC). The BRFSS is administered and supported by CDC's Population Health Surveillance Branch, under the Division of Population Health at the National Center for Chronic Disease Prevention and Health Promotion. BRFSS is an ongoing surveillance system designed to measure behavioral risk factors for the non-institutionalized adult population (18 years of age and older) residing in the US. The BRFSS was initiated in 1984, with 15 states collecting surveillance data on risk behaviors through monthly telephone interviews. Over time, the number of states participating in the survey increased; by 2001, 50 states, the District of Columbia, Puerto Rico, Guam, and the US Virgin Islands were participating in the BRFSS. Today, all 50 states, the District of Columbia, Puerto Rico, and Guam collect data annually and American Samoa, Federated States of Micronesia, and Palau collect survey data over a limited point- in-time (usually one to three months). In this document, the term “state” is used to refer to all areas participating in BRFSS, including the District of Columbia, Guam, and the Commonwealth of Puerto Rico.
+The Behavioral Risk Factor Surveillance System (BRFSS) is a collaborative project between all of the states in the United States (US) and participating US territories and the Centers for Disease Control and Prevention (CDC). The BRFSS is administered and supported by CDC's Population Health Surveillance Branch, under the Division of Population Health at the National Center for Chronic Disease Prevention and Health Promotion. BRFSS is an ongoing surveillance system designed to measure behavioral risk factors for the non-institutionalized adult population (18 years of age and older) residing in the US. The BRFSS was initiated in 1984, with 15 states collecting surveillance data on risk behaviors through monthly telephone interviews. Over time, the number of states participating in the survey increased; by 2001, 50 states, the District of Columbia, Puerto Rico, Guam, and the US Virgin Islands were participating in the BRFSS. Today, all 50 states, the District of Columbia, Puerto Rico, and Guam collect data annually and American Samoa, Federated States of Micronesia, and Palau collect survey data over a limited point- in-time (usually one to three months). In this document, the term ?state? is used to refer to all areas participating in BRFSS, including the District of Columbia, Guam, and the Commonwealth of Puerto Rico.
 
-The BRFSS objective is to collect uniform, state-specific data on preventive health practices and risk behaviors that are linked to chronic diseases, injuries, and preventable infectious diseases that affect the adult population. Factors assessed by the BRFSS in 2013 include tobacco use, HIV/AIDS knowledge and prevention, exercise, immunization, health status, healthy days — health-related quality of life, health care access, inadequate sleep, hypertension awareness, cholesterol awareness, chronic health conditions, alcohol consumption, fruits and vegetables consumption, arthritis burden, and seatbelt use. Since 2011, BRFSS conducts both landline telephone- and cellular telephone-based surveys. In conducting the BRFSS landline telephone survey, interviewers collect data from a randomly selected adult in a household. In conducting the cellular telephone version of the BRFSS questionnaire, interviewers collect data from an adult who participates by using a cellular telephone and resides in a private residence or college housing.
+The BRFSS objective is to collect uniform, state-specific data on preventive health practices and risk behaviors that are linked to chronic diseases, injuries, and preventable infectious diseases that affect the adult population. Factors assessed by the BRFSS in 2013 include tobacco use, HIV/AIDS knowledge and prevention, exercise, immunization, health status, healthy days ? health-related quality of life, health care access, inadequate sleep, hypertension awareness, cholesterol awareness, chronic health conditions, alcohol consumption, fruits and vegetables consumption, arthritis burden, and seatbelt use. Since 2011, BRFSS conducts both landline telephone- and cellular telephone-based surveys. In conducting the BRFSS landline telephone survey, interviewers collect data from a randomly selected adult in a household. In conducting the cellular telephone version of the BRFSS questionnaire, interviewers collect data from an adult who participates by using a cellular telephone and resides in a private residence or college housing.
 
 Health characteristics estimated from the BRFSS pertain to the non-institutionalized adult population, aged 18 years or older, who reside in the US. In 2013, additional question sets were included as optional modules to provide a measure for several childhood health and wellness indicators, including asthma prevalence for people aged 17 years or younger. 
 
@@ -23,7 +23,7 @@ Health characteristics estimated from the BRFSS pertain to the non-institutional
 ###### Dataset notes ######
 - The dataset is provided in both Stata (.dta) and R Workspace (.Rdata) formats.  Categorical values are factors in the R workspace, and value labels are attached in the Stata version (except when a categorical variable contains more than 50 categories.
 
-- All missing values are coded NA in the R Workspace.  For Stata, missing values are coded missing using the following codes: . (numbers) or empty text field: BLANK; .a: Don’t know/Not sure; .b: Refused; .c: Zero (none); .d: Don’t know/Not Sure Or Refused/Missing
+- All missing values are coded NA in the R Workspace.  For Stata, missing values are coded missing using the following codes: . (numbers) or empty text field: BLANK; .a: Don?t know/Not sure; .b: Refused; .c: Zero (none); .d: Don?t know/Not Sure Or Refused/Missing
 
 - Many variables, such as age, race, education, as well as variables that measure counts of events (drinks, times eating fruit, etc.) have alternate versions in the Calculated Variables section of the dataset.  Review this section prior to choosing variables for analysis.
 
@@ -1312,7 +1312,7 @@ Notes: **bloodcho** is coded 2, 7, 9, or missing.  Refer to <a href="##_rfchol">
 
 **cvdinfr4**: Ever Diagnosed With Heart Attack
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had a heart attack, also called a myocardial infarction?*
 
@@ -1334,7 +1334,7 @@ Missing values: 7, 9, BLANK
 
 **cvdcrhd4**: Ever Diagnosed With Angina Or Coronary Heart Disease
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had angina or coronary heart disease?*
 
@@ -1355,7 +1355,7 @@ Missing values: 7, 9
 
 **cvdstrk3**: Ever Diagnosed With A Stroke
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had a stroke.*
 
@@ -1376,7 +1376,7 @@ Missing values: 7, 9
 
 **asthma3**: Ever Told Had Asthma
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had asthma?*
 
@@ -1398,7 +1398,7 @@ Notes: Refer to <a href="##_ltasth1">*\_ltasth1*</a> and <a href="##_asthms1">*\
 
 **asthnow**: Still Have Asthma
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *Do you still have asthma?*
 
@@ -1421,7 +1421,7 @@ Notes: **asthma3** is coded 2, 7, 9, or missing.  Refer to <a href="##_casthm1">
 
 **chcscncr**: (Ever Told) You Had Skin Cancer?
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had skin cancer?*
 
@@ -1442,7 +1442,7 @@ Missing values: 7, 9
 
 **chcocncr**: (Ever Told) You Had Any Other Types Of Cancer?
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you had any other types of cancer?*
 
@@ -1463,7 +1463,7 @@ Missing values: 7, 9
 
 **chccopd1**: (Ever Told) You Have (Copd) Chronic Obstructive Pulmonary Disease, Emphysema Or 
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you have Chronic Obstructive Pulmonary Disease or COPD, emphysema or chronic bronchitis?*
 
@@ -1485,7 +1485,7 @@ Missing values: 7, 9, BLANK
 
 **havarth3**: Told Have Arthritis
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia? (Arthritis diagnoses include: rheumatism, polymyalgia rheumatica; osteoarthritis (not osteporosis); tendonitis, bursitis, bunion, tennis elbow; carpal tunnel syndrome, tarsal tunnel syndrome; joint infection, etc.)*
 
@@ -1507,7 +1507,7 @@ Notes: Refer to <a href="##_drdxar1">*\_drdxar1*</a> for another version of this
 
 **addepev2**: Ever Told You Had A Depressive Disorder
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you that you have a depressive disorder, including depression, major depression, dysthymia, or minor depression?*
 
@@ -1528,7 +1528,7 @@ Missing values: 7, 9
 
 **chckidny**: (Ever Told) You Have Kidney Disease?
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you have kidney disease? Do NOT include kidney stones, bladder infection or incontinence.(Incontinence is not being able to control urine flow.)*
 
@@ -1549,7 +1549,7 @@ Missing values: 7, 9
 
 **diabete3**: (Ever Told) You Have Diabetes
 
-*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you’re "Not sure":*
+*Has a doctor, nurse, or other health professional ever told you that you had any of the following? For each, tell me "Yes", "No", or you?re "Not sure":*
 
 *(Ever told) you have diabetes (If "Yes" and respondent is female, ask "Was this only when you were pregnant?". If Respondent says pre-diabetes or borderline diabetes, use response code 4.)*
 
@@ -2058,7 +2058,7 @@ Missing values: 7, 9, BLANK
 
 **diffalon**: Difficulty Doing Errands Alone
 
-*Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor’s office or shopping?*
+*Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a doctor?s office or shopping?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2171,7 +2171,7 @@ Notes: **smoke100** is coded 2, 7, 9, or missing or **smokday2** is coded 7, 9, 
 
 **usenow3**: Use Of Smokeless Tobacco Products
 
-*Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all? (Snus (Swedish for snuff) is a moist smokeless tobacco, usually sold in small pouches that are placed under the lip against the gum.)[Snus (rhymes with ´goose´)]*
+*Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all? (Snus (Swedish for snuff) is a moist smokeless tobacco, usually sold in small pouches that are placed under the lip against the gum.)[Snus (rhymes with ?goose?)]*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2306,7 +2306,7 @@ Notes: First number denotes times per day (1), week (2), or month (3).  The rema
 
 **fruit1**: How Many Times Did You Eat Fruit?
 
-*During the past month, not counting juice, how many times per day, week, or month did you eat fruit? Count fresh, frozen, or canned fruit.(Read only if necessary: “Your best guess is fine. Include apples, bananas, applesauce, oranges, grape fruit, fruit salad, watermelon, cantaloupe or musk melon, papaya, lychees, star fruit,)*
+*During the past month, not counting juice, how many times per day, week, or month did you eat fruit? Count fresh, frozen, or canned fruit.(Read only if necessary: ?Your best guess is fine. Include apples, bananas, applesauce, oranges, grape fruit, fruit salad, watermelon, cantaloupe or musk melon, papaya, lychees, star fruit,)*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2381,7 +2381,7 @@ Notes: First number denotes times per day (1), week (2), or month (3).  The rema
 
 **fvorang**: How Many Times Did You Eat Orange-Colored Vegetables?
 
-*During the past month, how many times per day, week, or month did you eat orange-colored vegetables such as sweet potatoes, pumpkin, winter squash, or carrots? (Read only if needed: “Winter squash have hard, thick skins and deep yellow to orange flesh. They include acorn, buttercup, and spaghetti squash.”)*
+*During the past month, how many times per day, week, or month did you eat orange-colored vegetables such as sweet potatoes, pumpkin, winter squash, or carrots? (Read only if needed: ?Winter squash have hard, thick skins and deep yellow to orange flesh. They include acorn, buttercup, and spaghetti squash.?)*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2406,7 +2406,7 @@ Notes: First number denotes times per day (1), week (2), or month (3).  The rema
 
 **vegetab1**: How Many Times Did You Eat Other Vegetables?
 
-*Not counting what you just told me about, during the past month, about how many times per day, week, or month did you eat OTHER vegetables? Examples of other vegetables include tomatoes, tomato juice or V-8 juice, corn, eggplant, peas, lettuce, cabbage, and white potatoes that are not fried such as baked or mashed potatoes.(Read only if needed: “Do not count vegetables you have already counted and do not include fried potatoes.”)*
+*Not counting what you just told me about, during the past month, about how many times per day, week, or month did you eat OTHER vegetables? Examples of other vegetables include tomatoes, tomato juice or V-8 juice, corn, eggplant, peas, lettuce, cabbage, and white potatoes that are not fried such as baked or mashed potatoes.(Read only if needed: ?Do not count vegetables you have already counted and do not include fried potatoes.?)*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2845,7 +2845,7 @@ Notes: *havarth3* is coded 2, 7, 9, or missing.
 
 **seatbelt**: How Often Use Seatbelts In Car?
 
-*How often do you use seat belts when you drive or ride in a car? Would you say—*
+*How often do you use seat belts when you drive or ride in a car? Would you say?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2871,7 +2871,7 @@ Missing values: 7, 9, BLANK
 
 **flushot6**: Adult Flu Shot/Spray Past 12 Mos
 
-*Now I will ask you questions about the flu vaccine. There are two ways to get the flu vaccine, one is a shot in the arm and the other is a spray, mist, or drop in the nose called FluMist™.*
+*Now I will ask you questions about the flu vaccine. There are two ways to get the flu vaccine, one is a shot in the arm and the other is a spray, mist, or drop in the nose called FluMist?.*
 
 *During the past 12 months, have you had either a flu shot or a flu vaccine that was sprayed in your nose? (A new flu shot came out in 2011 that injects vaccine into the skin with a very small needle. It is called Fluzone Intradermal vaccine. This is also considered a flu shot.)*
 
@@ -2913,7 +2913,7 @@ Notes: First two numbers denote the month, the second four the year.
 
 **tetanus**: Received Tetanus Shot Since 2005?
 
-*Since 2005, have you had a tetanus shot? (If yes, ask: “Was this Tdap, the tetanus shot that also has pertussis or whooping cough vaccine?”)*
+*Since 2005, have you had a tetanus shot? (If yes, ask: ?Was this Tdap, the tetanus shot that also has pertussis or whooping cough vaccine??)*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2935,7 +2935,7 @@ Missing values: 7, 9, BLANK
 
 **pneuvac3**: Pneumonia Shot Ever
 
-*A pneumonia shot or pneumococcal vaccine is usually given only once or twice in a person´s lifetime and is different from the flu shot. Have you ever had a pneumonia shot?*
+*A pneumonia shot or pneumococcal vaccine is usually given only once or twice in a person?s lifetime and is different from the flu shot. Have you ever had a pneumonia shot?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -2998,7 +2998,7 @@ Notes: First two numbers denote the month, the second four the year.  Note that 
 
 **whrtst10**: Location Of Last HIV Test
 
-*Where did you have your last HIV test — at a private doctor or HMO office, at a counseling and testing site, in the emergency room, as an inpatient in a hospital, at a clinic, in a jail or prison, at a drug treatment facility, at home, or somewhere else?*
+*Where did you have your last HIV test ? at a private doctor or HMO office, at a counseling and testing site, in the emergency room, as an inpatient in a hospital, at a clinic, in a jail or prison, at a drug treatment facility, at home, or somewhere else?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -3049,7 +3049,7 @@ Notes: *diabete3* is coded 1.
 
 **prediab1**: Ever Been Told You Have Pre-Diabetes Or Borderline Diabetes
 
-*Have you ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes? (If “Yes” and respondent is female, ask: “Was this only when you were pregnant?”)*
+*Have you ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes? (If ?Yes? and respondent is female, ask: ?Was this only when you were pregnant??)*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -3186,7 +3186,7 @@ Notes: *diabete3* is coded 2, 3, 4, 7, 9, or missing.
 
 **chkhemo3**: Times Checked For Glycosylated Hemoglobin
 
-*A test for "A one C" measures the average level of blood sugar over the past three months. About how many times in the past 12 months has a doctor, nurse, or other health professional checked you for “A one C”?*
+*A test for "A one C" measures the average level of blood sugar over the past three months. About how many times in the past 12 months has a doctor, nurse, or other health professional checked you for ?A one C??*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -3560,7 +3560,7 @@ Missing values: 7, 9, BLANK
 
 **carercvd**: Satisfied With Care Received
 
-*In general, how satisfied are you with the health care you received? Would you say—*
+*In general, how satisfied are you with the health care you received? Would you say?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -3790,7 +3790,7 @@ Notes: *asthma3* is coded 2, 7, 9, or missing, or *asthnow* is coded 2, 7, 9, or
 
 **asdrvist**: Urgent Asthma Treatment During Past 12 Months
 
-*If one or more visits to Q3, fill in “Besides those emergency room or urgent care center visits,”]*
+*If one or more visits to Q3, fill in ?Besides those emergency room or urgent care center visits,?]*
 
 *During the past 12 months, how many times did you see a doctor, nurse or other health professional for urgent treatment of worsening asthma symptoms?*
 
@@ -3857,7 +3857,7 @@ Notes: *asthma3* is coded 2, 7, 9, or missing, or *asthnow* is coded 2, 7, 9, or
 
 **asymptom**: Asthma Symptoms During Past 30 Days
 
-*Symptoms of asthma include cough, wheezing, shortness of breath, chest tightness and phlegm production when you don´t have a cold or respiratory infection. During the past 30 days, how often did you have any symptoms of asthma?*
+*Symptoms of asthma include cough, wheezing, shortness of breath, chest tightness and phlegm production when you don?t have a cold or respiratory infection. During the past 30 days, how often did you have any symptoms of asthma?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -3983,7 +3983,7 @@ Notes: *cvdinfr4* is coded 2, 7, 9, or missing.
 
 **strehab1**: Outpatient Rehab After Hosp Stay For Stroke
 
-*Following your stroke did you go to any kind of outpatient rehabilitation? This is sometimes called “rehab.”*
+*Following your stroke did you go to any kind of outpatient rehabilitation? This is sometimes called ?rehab.?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -4214,7 +4214,7 @@ Value | Value Label | Frequency | Percent | Cumulative Frequency
 7 | An emergency room | 24 | 0.00 | 3.78
 8 | Workplace | 3,418 | 0.70 | 4.47
 9 | Some other kind of place | 829 | 0.17 | 4.64
-10 | Received vaccination in Canada/Mexico (Volunteered – Do not read) | 3 | 0.00 | 4.64
+10 | Received vaccination in Canada/Mexico (Volunteered ? Do not read) | 3 | 0.00 | 4.64
 11 | A school | 197 | 0.04 | 4.68
 NA | Don't know / Not sure | 62 | 0.01 | 4.69
 NA | Refused | 74 | 0.02 | 4.71
@@ -4233,9 +4233,9 @@ Notes: *flushot6* is coded 2, 7, or 9.
 
 **hpvadvc2**: Ever Had The HPV Vaccination?
 
-*A vaccine to prevent the human papilloma virus or HPV infection is available and is called the cervical cancer or genital warts vaccine, HPV shot, [Fill: if female “GARDASIL or CERVARIX”, if male “GARDASIL”].*
+*A vaccine to prevent the human papilloma virus or HPV infection is available and is called the cervical cancer or genital warts vaccine, HPV shot, [Fill: if female ?GARDASIL or CERVARIX?, if male ?GARDASIL?].*
 
-*Have you ever had the HPV vaccination? (Human Papilloma Virus (Human Pap•uh•loh•muh Virus), Gardasil (Gar•duh• seel), Cervarix (Serv a rix))*
+*Have you ever had the HPV vaccination? (Human Papilloma Virus (Human Pap?uh?loh?muh Virus), Gardasil (Gar?duh? seel), Cervarix (Serv a rix))*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -4663,7 +4663,7 @@ Notes: *age* is less than 40 or *sex* is coded 2, or *psatest1* is coded 2, 7, 9
 
 **pcpsars1**: What Was The Main Reason You Had This PSA Test?
 
-*What was the MAIN reason you had this PSA test – was it ...?*
+*What was the MAIN reason you had this PSA test ? was it ...?*
 
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
@@ -4729,7 +4729,7 @@ Value | Value Label | Frequency | Percent | Cumulative Frequency
 24 |  Spouse/significant other AND Friend/non-relative | 1 | 0.00 | 0.25
 3 | Other family member | 18 | 0.00 | 0.25
 4 | Friend/non-relative | 9 | 0.00 | 0.25
-NA | Don’t know / Not sure | 6 | 0.00 | 0.25
+NA | Don?t know / Not sure | 6 | 0.00 | 0.25
 NA | No additional choices | 2 | 0.00 | 0.25
 NA | Refused | 5 | 0.00 | 0.26
 NA | [Missing] | 490,518 | 99.74 | 100.00
@@ -5067,7 +5067,7 @@ Missing values: 7, 9 BLANK
 
 **mistrhlp**: Mental Health Treatment Can Help People Lead Normal Life
 
-*These next questions ask about peoples´ attitudes toward mental illness and its treatment.*
+*These next questions ask about peoples? attitudes toward mental illness and its treatment.*
 
 *Treatment can help people with mental illness lead normal lives. Do you agree slightly or strongly, or disagree slightly or strongly?*
 
@@ -7043,7 +7043,7 @@ Missing values: BLANK
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 [0 - 5010] | Estimated maximum oxygen consumption [2 implied decimal places] | 487,044 | 99.04 | 99.04
-99900 | Don’t know/Not Sure/Refused/Missing | 4,729 | 0.96 | 100.00
+99900 | Don?t know/Not Sure/Refused/Missing | 4,729 | 0.96 | 100.00
  | Total | 491,773 | 100.00 | 
 
 Variable type: categorical
@@ -7060,7 +7060,7 @@ Missing values: 99900
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 [0 - 8590] | Estimated functional capacity [2 implied decimal places] | 487,044 | 99.04 | 99.04
-99900 | Don’t know/Not Sure/Refused/Missing | 4,729 | 0.96 | 100.00
+99900 | Don?t know/Not Sure/Refused/Missing | 4,729 | 0.96 | 100.00
  | Total | 491,773 | 100.00 | 
 
 Variable type: categorical
@@ -7151,7 +7151,7 @@ Missing values: BLANK
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 [0 - 98999] | Activity times per week [3 implied decimal places] | 327,548 | 66.61 | 66.61
-99000 | Don’t know/Not Sure/Refused | 18 | 0.00 | 66.61
+99000 | Don?t know/Not Sure/Refused | 18 | 0.00 | 66.61
 NA | [Missing] | 164,207 | 33.39 | 100.00
  | Total | 491,773 | 100.00 | 
 
@@ -7169,7 +7169,7 @@ Missing values: 99000, BLANK
 Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 [0 - 98999] | Activity times per week [3 implied decimal places] | 213,544 | 43.43 | 43.43
-99000 | Don’t know/Not Sure/Refused | 14 | 0.00 | 43.43
+99000 | Don?t know/Not Sure/Refused | 14 | 0.00 | 43.43
 NA | [Missing] | 278,215 | 56.57 | 100.00
  | Total | 491,773 | 100.00 | 
 
@@ -7224,7 +7224,7 @@ Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 0 | No times | 283,900 | 57.73 | 57.73
 [1 - 98999] | Strength activity times per week [3 implied decimal places] | 168,033 | 34.17 | 91.90
-99000 | Don’t know/Not Sure/Refused | 11 | 0.00 | 91.90
+99000 | Don?t know/Not Sure/Refused | 11 | 0.00 | 91.90
 NA | [Missing] | 39,829 | 8.10 | 100.00
  | Total | 491,773 | 100.00 | 
 
@@ -7243,7 +7243,7 @@ Value | Value Label | Frequency | Percent | Cumulative Frequency
 :--: | :--- | ---: | ---: | ---:
 0 | Not Missing Physical Activity Data | 404,962 | 82.35 | 82.35
 1 | Missing Physical Activity Data | 52,781 | 10.73 | 93.08
-NA | Don’t know/Not Sure/Refused | 34,030 | 6.92 | 100.00
+NA | Don?t know/Not Sure/Refused | 34,030 | 6.92 | 100.00
  | Total | 491,773 | 100.00 | 
 
 Variable type: categorical
