@@ -1,12 +1,4 @@
----
-title: "Bayesian Statistics - Project Rubric"
-output: 
-  html_document: 
-    fig_height: 4
-    highlight: pygments
-    theme: spacelab
-    keep_md: yes
----
+# Bayesian Statistics - Project Rubric
 
 <br>
 
