@@ -24,7 +24,7 @@ well justified.
 random assignment was used.
 
     
-## Part 3: Data manipulation (10 points)
+## Part 2: Data manipulation (10 points)
 
 - Create new variable based on `title_type`: New variable should be called 
 `feature_film` with levels yes (movies that are feature films) and no (2 pt)
@@ -32,10 +32,10 @@ random assignment was used.
 with levels yes (movies that are dramas) and no (2 pt)
 - Create new variable based on `mpaa_rating`: New variable should be called `mpaa_rating_R` with levels yes (movies that are R rated) and no (2 pt)
 - Create two new variables based on `thtr_rel_month`: 
-  - New variable called `oscar_season` with levels yes (if movie is released 
-  in November, October, or December) and no (2 pt)
-  - New variable called `summer_season` with levels yes (if movie is released 
-  in May, June, July, or August) and no (2 pt)
+    + New variable called `oscar_season` with levels yes (if movie is released 
+    in November, October, or December) and no (2 pt)
+    + New variable called `summer_season` with levels yes (if movie is released 
+    in May, June, July, or August) and no (2 pt)
 
 
 ## Part 3: EDA (9 points)
@@ -58,7 +58,7 @@ and the new variables constructed in the previous part
     + Narrative should interpret the visuals / R output correctly (1 pts)
     + Narrative should address the research question (1 pts)
   
-## Modeling (15 points)
+## Part 4: Modeling (15 points)
 
 Develop a Bayesian regression model to predict `audience_score` from the following
 explanatory variables. Note that some of these variables are in the original dataset
@@ -91,13 +91,9 @@ Complete Bayesian model selection and report the final model.
 
 Pick a movie from 2016 (a new movie that is not in the sample) and do a 
 prediction for this movie using your the model you developed and the 
-`predict` function in R. Also quantify the uncertainty around this 
-prediction using an appropriate interval.
+`predict` function in R.
 
-- Correct prediction (2 pts)
-- Correct quantification of uncertainty around this prediction with a 
-credible interval (1 pts)
-- Correct interpretation of credible interval (1 pt)
+- Correct prediction (4 pts)
 - Reference(s) for where the data for this movie come from (1 pt)
 
 ## Conclusion (3 points)
