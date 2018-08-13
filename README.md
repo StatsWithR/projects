@@ -25,5 +25,3 @@ This repository contains the most recent versions of all projects and peer asses
 - [Movies codebook](04_bayesian/movies_codebook.Rmd)
 - [Bayesian Statistics project template](04_bayesian/bayesian_project.Rmd)
 - [Bayesian Statistics project rubric](04_bayesian/bayesian_project_rubric.Rmd)
-
-### 
